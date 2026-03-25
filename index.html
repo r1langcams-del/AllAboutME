@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Me</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,9 +29,21 @@
             border-radius: 10px;
         }
 
-        .favorites {
-            display: flex;
-            gap: 50px;
+        /* ✅ TABLE FIX */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 2px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #90EE90;
         }
 
         .image-container {
@@ -61,6 +74,7 @@
             text-decoration: none;
         }
     </style>
+
 </head>
 <body>
 
@@ -69,11 +83,12 @@
     <div class="section">
         <h2>My Background</h2>
         <p>
-            My Name is Roosevelt J. Langcamon, a 17 years old student in the UAE. 
-            I was born on December 28, 2008, raised in Cebu, Mandaue City.
+            My Name is Roosevelt J. Langcamon, a 17 years old Student in the UAE, a regular teen who has big dreams. I am known for being loud and also a quiet student but I only try to live the best I can. I was born on December 28 2008, raised in Cebu, Mandaue City, and on December 10 2021 was the first time I arrived here in the UAE, and throughout the years I've been in the UAE I learned and discovered a lot of new things.
         </p>
     </div>
 
+    <!--  FIXED DIV -->
+    <div class="section">
         <h2>My Goals</h2>
         <p>
             My goal in life is to become a father of 2, with a loving wife and work as an engineer.
@@ -82,24 +97,26 @@
 
     <div class="section">
         <h2>My Favorite Things</h2>
-<table>
-    <tr>
-        <th>Category</th>
-        <th>Favorite</th>
-    </tr>
-    <tr>
-        <td>Anime</td>
-        <td>Attack on titan, My Dress-up Darlin, Jujutsu Kaisen</td>
-    </tr>
-    <tr>
-        <td>Games</td>
-        <td>CODM, ML, Roblox, Block Blast</td>
-    </tr>
-    <tr>
-        <td>Food</td>
-        <td>Shawarma, Lechon baboy, Sisig, Seafood boil</td>
-    </tr>
-</table>
+
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Favorite</th>
+            </tr>
+            <tr>
+                <td>Anime</td>
+                <td>Attack on Titan, My Dress-up Darling, Jujutsu Kaisen</td>
+            </tr>
+            <tr>
+                <td>Games</td>
+                <td>CODM, ML, Roblox, Block Blast</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>Shawarma, Lechon Baboy, Sisig, Seafood Boil</td>
+            </tr>
+        </table>
+    </div>
 
     <div class="image-container">
         <img src="img1.jpg" alt="My Picture" class="my-image">
