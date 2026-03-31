@@ -29,7 +29,21 @@
             border-radius: 10px;
         }
 
-        /* ✅ TABLE FIX */
+        /* NEW: FLEX FOR BACKGROUND + IMAGE */
+        .background-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .background-flex img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #888;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -44,19 +58,6 @@
 
         th {
             background-color: #90EE90;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .my-image {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 2px solid #888;
         }
 
         .btn {
@@ -82,12 +83,16 @@
 
     <div class="section">
         <h2>My Background</h2>
-        <p>
-            My Name is Roosevelt J. Langcamon, a 17 years old Student in the UAE, a regular teen who has big dreams. I am known for being loud and also a quiet student but I only try to live the best I can. I was born on December 28 2008, raised in Cebu, Mandaue City, and on December 10 2021 was the first time I arrived here in the UAE, and throughout the years I've been in the UAE I learned and discovered a lot of new things.
-        </p>
+
+        <div class="background-flex">
+            <p>
+                My Name is Roosevelt J. Langcamon, a 17 years old Student in the UAE, a regular teen who has big dreams. I am known for being loud and also a quiet student but I only try to live the best I can. I was born on December 28, 2008, raised in Cebu, Mandaue City, and on December 10, 2021 was the first time I arrived here in the UAE. Throughout the years, I've been in the UAE. I learned and discovered a lot of new things.
+            </p>
+
+            <img src="img1.jpg" alt="My Picture">
+        </div>
     </div>
 
-    <!--  FIXED DIV -->
     <div class="section">
         <h2>My Goals</h2>
         <p>
@@ -105,25 +110,33 @@
             </tr>
             <tr>
                 <td>Anime</td>
-                <td>Attack on Titan, My Dress-up Darling, Jujutsu Kaisen</td>
+                <td>
+                    Attack on Titan - <a href="https://youtube.com/shorts/T0YCgu5f3os?si=2h_CsbQrirPuhfkh" target="_blank">Watch</a><br>
+                    My Dress-up Darling - <a href="https://hianime.cv/anime/my-dress-up-darling/" target="_blank">Watch</a><br>
+                    Jujutsu Kaisen - <a href="https://hianime.cv/anime/jujutsu-kaisen-tv/" target="_blank">Watch</a>
+                </td>
             </tr>
             <tr>
                 <td>Games</td>
-                <td>CODM, ML, Roblox, Block Blast</td>
+                <td>
+                    CODM<br>
+                    ML<br>
+                    Roblox<br>
+                    Block Blast
+                </td>
             </tr>
             <tr>
                 <td>Food</td>
-                <td>Shawarma, Lechon Baboy, Sisig, Seafood Boil</td>
+                <td>
+                    Shawarma - <a href="https://www.youtube.com/watch?v=fZ3PqU2EoOM" target="_blank">Watch</a><br>
+                    Lechon Baboy - <a href="https://www.youtube.com/watch?v=cQyoDpQuDpI&t=277s" target="_blank">Watch</a><br>
+                    Sisig - <a href="https://www.youtube.com/watch?v=M-Gso2xK9t8" target="_blank">Watch</a><br>
+                    Seafood Boil - <a href="https://www.youtube.com/watch?v=_LZGYG31o2c" target="_blank">Watch</a>
+                </td>
             </tr>
         </table>
     </div>
 
-    <div class="image-container">
-        <img src="img1.jpg" alt="My Picture" class="my-image">
-        <p>Placeholder 1</p>
-    </div>
-
-    <!-- BUTTON TO HOBBIES PAGE -->
     <a href="hobby.html">
         <button class="btn">Go to My Hobbies</button>
     </a>
